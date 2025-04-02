@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Sunglasses Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- AI Assistant -->
+    <header>
+        <h1>Welcome to AI-Powered Sunglasses Store</h1>
+        <div id="ai-assistant">
+            <p>👋 Hi! I’m your AI assistant. Need help choosing sunglasses?</p>
+            <button onclick="aiChat()">Chat with AI</button>
+        </div>
+    </header>
+
+    <!-- Virtual Try-On -->
+    <section id="virtual-tryon">
+        <h2>Try on Sunglasses in AR</h2>
+        <iframe src="https://your-vr-tryon-link.com" width="100%" height="400px"></iframe>
+    </section>
+
+    <!-- Recommended Products -->
+    <section id="recommendations">
+        <h2>Recommended for You</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/sunglasses1.jpg" alt="Sunglasses 1">
+                <p>Classic Aviator</p>
+                <button onclick="showDiscount()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="images/sunglasses2.jpg" alt="Sunglasses 2">
+                <p>Sporty Shades</p>
+                <button onclick="showDiscount()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Watching + Discount -->
+    <section id="currently-watching">
+        <h2>You're Viewing</h2>
+        <div class="watching">
+            <img src="images/sunglasses3.jpg" alt="Selected Product">
+            <p>Stylish Black Frames</p>
+            <button onclick="showDiscount()">Get 20% Off Now</button>
+        </div>
+    </section>
+
+    <!-- Discount Popup -->
+    <div id="discount-popup" class="hidden">
+        <p>🎉 Limited-Time Discount! Use code **SUN20** at checkout!</p>
+        <button onclick="hideDiscount()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
